@@ -21,9 +21,9 @@ Copy `bots/template/bot.py` into a new folder under `bots/`, implement `decide()
 
 ## Need a Python library that isn't preinstalled?
 
-The sandbox container ships with `eval7`, `numpy`, `scipy`, `treys`, and `scikit-learn` plus the full Python 3.10 stdlib. If you need something else, **open a GitHub Issue with the title prefix `[library-request]`** by **18 May 2026 (23:59 UTC)**. We will review batched requests once and rebuild the sandbox image before the 1 June qualifier.
+The sandbox container ships with `eval7`, `numpy`, `scipy`, `treys`, and `scikit-learn` plus the full Python 3.10 stdlib. If you need something else, **open a GitHub Issue with the title prefix `[library-request]`** by **25 May 2026 (23:59 UTC)**. We will review batched requests once and rebuild the sandbox image before the 1 June qualifier.
 
-Requests after 18 May 2026 will not make it in. Plan accordingly.
+Requests after 25 May 2026 will not make it in. Plan accordingly.
 
 What we'll generally accept:
 - Numerical/scientific (e.g. `pandas`, `networkx`, `scikit-learn` extensions)
