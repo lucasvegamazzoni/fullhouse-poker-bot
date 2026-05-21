@@ -35,7 +35,9 @@ pip3 install flask numpy scipy treys scikit-learn
 python3 demo.py
 ```
 
-Open `http://localhost:5000` — you'll see 6 reference bots playing each other live with a real-time leaderboard and hand replay.
+Open `http://localhost:5001` — you'll see 6 reference bots playing each other live with a real-time leaderboard and hand replay.
+
+> **macOS users**: we use port 5001 instead of the Flask default 5000 because macOS Monterey+ binds port 5000 to AirPlay Receiver. Override with `DEMO_PORT=8080 python3 demo.py` if 5001 is taken too.
 
 > Hitting a build error on `eval7`? You're not alone — modern pip's build
 > isolation breaks it. The two-step install above is the workaround. We have
@@ -139,7 +141,7 @@ def decide(state):
 python3 sandbox/match.py bots/mybot/bot.py bots/shark/bot.py --hands 400
 
 # full tournament simulation (3 Swiss rounds)
-# use the demo UI at http://localhost:5000
+# use the demo UI at http://localhost:5001
 ```
 
 ---

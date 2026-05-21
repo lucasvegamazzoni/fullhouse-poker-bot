@@ -1,7 +1,7 @@
 """
 Fullhouse Hackathon — Local Demo
 Run: python demo.py
-Open: http://localhost:5000
+Open: http://localhost:5001
 
 No Docker, Redis, or Supabase needed.
 Runs real matches using the actual game engine and shows results live.
@@ -374,7 +374,8 @@ if __name__ == "__main__":
     print("\n" + "="*50)
     print("  FULLHOUSE HACKATHON — LOCAL DEMO")
     print("="*50)
-    print("  Open:  http://localhost:5000")
+    port = int(os.environ.get("DEMO_PORT", "5001"))
+    print(f"  Open:  http://localhost:{port}")
     print("  Bots:  ", ", ".join(BOT_PATHS.keys()))
     print("="*50 + "\n")
-    app.run(debug=False, threaded=True, port=5000)
+    app.run(debug=False, threaded=True, port=port)
