@@ -202,7 +202,7 @@ demo.py         Quick local demo
 
 | Layer | Technology |
 |-------|------------|
-| Game engine | Python 3.9+ |
+| Game engine | Python 3.10 (eval7 needs `longintrepr.h`, removed in 3.11+) |
 | Hand evaluation | eval7 (same as MIT Pokerbots) |
 | Bot isolation | 2s time limit, no network, no file I/O |
 
