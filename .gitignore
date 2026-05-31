@@ -1,15 +1,5 @@
-# Internal — kept in separate private repo
-portal/
-supabase/
-matchqueue/
-queue/
-setup_fullhouse.py
-
-# Python
+venv/
 __pycache__/
 *.pyc
-*.pyo
-.env
-
-# Node
-node_modules/
+.DS_Store
+*.egg-info/
